@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    background-image: url(background/fundo.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: cursive;
+    src: url(Bebas_Neue\,Kaushan_Script\,Roboto\,Work_Sans/);
+}
+
+div#conteudo {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+ div#conteudo > h1 {
+   font-family: cursive;
+   font-style: italic;
+   padding: 10px;
+   color: red;
+}
+
+div#res {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+
+div#conteudo > button {
+    font-family: cursive;
+    font-weight: bold;
+    width: 80px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+div#conteudo > button:hover {
+    background-color: red;
+    border: none;
+}
