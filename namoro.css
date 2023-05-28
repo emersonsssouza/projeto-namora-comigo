@@ -11,7 +11,7 @@ body {
     height: 100vh;
     display: flex;
     margin: auto;
-    background-image: url(background/fundo.jpg);
+    background-image: url(fundo.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
