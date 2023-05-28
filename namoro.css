@@ -32,6 +32,7 @@ div#conteudo {
  div#conteudo > h1 {
    font-family: cursive;
    font-style: italic;
+   font-weight: bold;
    padding: 10px;
    color: red;
 }
@@ -56,6 +57,5 @@ div#conteudo > button {
 }
 
 div#conteudo > button:hover {
-    background-color: red;
     border: none;
 }
