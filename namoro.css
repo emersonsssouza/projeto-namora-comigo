@@ -37,6 +37,14 @@ div#conteudo {
    color: red;
 }
 
+div#resnome {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+
 div#res {
     text-align: center;
     display: flex;

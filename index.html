@@ -10,11 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Roboto:wght@300&family=Work+Sans:wght@300;500;600&display=swap" rel="stylesheet">
     <title>Namora comigo?</title>
 </head>
-<body>
+<body onload()>
     <div id="conteudo">
+        <div id="resnome"></div>
         <h1 id="texto">Aceita namorar comigo?</h1>
             <button id="aceitar" onclick="mudaTexto()">Sim</button>
-                <button id="negar" onclick="desvia(this)" onmouseover="desvia(this)">Não</button>
+            <button id="negar" onclick="desvia(this)" onmouseover="desvia(this)">Não</button>
 
         <div id="res">
 
@@ -22,12 +23,18 @@
     </div>
 
     <script>
+        let nome = prompt("Qual é seu nome?")
+            let nomePessoa = document.getElementById('resnome').innerHTML = nome;
+            let cor = document.getElementById('resnome').style.color = 'red';
+            let tamanho = document.getElementById('resnome').style.fontSize = '50px';
+        
         function mudaTexto(){
             let texto = document.getElementById('texto').innerHTML = 'Eu te amo'
             let btn = document.getElementById('aceitar').style.display = 'none'
             let btn2 = document.getElementById('negar').style.display = 'none'
             let res2 = document.getElementById('res').style.fontSize = '25px'
-            let res = document.getElementById('res').innerHTML = 'Ter voce como namorada... <br> É fazer a vida ter sentido, <br> Sentir-se feliz de qualquer lado <br> E achar tudo tão bonito e ficar bobo? <br> É muito mais que tudo isso, <br> É querer estar perto a todo instante <br> É chegar perto e suar frio <br> É estar alegre o bastante <br> É dividir o lanche da padaria, <br> É sair correndo da chuva, <br> E ir ao cinema na sessão das duas <br> É andar no jardim de mãos dadas, <br> É gargalhar das meias rasgadas, <br> E mesmo em pensamento estar junto <br> E não dar espaço pra solidão <br> É ter em mãos o mundo <br> Mas só uma pessoa no coração <br> É poder rir das suas caretas, <br> E esquecer um pouco do tempo, <br> Brincar de correr atrás das borboletas <br> E guardar pra sempre esse momento <br> É querer dormir agarrado, <br>Acampar em bosques enluarados <br>É querer estar sempre abraçado <br> Mesmo em dias ensolarados <br>Tudo isso é ter uma namorada.'
+            let divnomepessoa = document.getElementById('resnome').style.display = 'none'
+            let res = document.getElementById('res').innerHTML = `${nome} ou Amor da minha vida, sei que essa expressão é um tanto quanto clichê e que muita gente a usa de maneira, digamos, vazia. Mas quero que saiba que digo de coração! Você é realmente o amor da minha vida, alguém que chegou por aqui e mudou tudo o que eu conhecia, dando à minha vida um novo sentido e me fazendo conhecer sensações que eu jamais imaginei sentir. Antes de você, eu apenas achava que sabia o que era amor, mas agora posso dizer, sem medo de cometer nenhum erro, que você me apresentou esse sentimento e trouxe à minha vida mais felicidade do que jamais alguém conseguiu trazer. Quero que saiba que sempre vou dar 110% de mim para  esse relacionamento, minha disposição para que sejamos felizes é plena! Estou de braços abertos para receber você aqui no meu abraço, saiba que sempre vou estar aqui para celebrar as suas conquistas e te acolher nos momentos de tristeza e sofrimento. Te amo, meu amorzinho!`
         }
 
         function desvia(t){
